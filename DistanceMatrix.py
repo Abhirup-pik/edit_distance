@@ -22,7 +22,7 @@ def dm(t,T_hat,A,n):
    
     # Metric distance parameter
    
-    p0=float(len(A)/T_hat[-1]-T_hat[0]) # parameter for time
+    p0=float(len(A)/(T_hat[-1]-T_hat[0])) # parameter for time
     p1=1.0 / (np.mean(np.abs(np.diff(A)))) # parameter for amplitude
     p2=1.0 # adding or deleting parameter
 
